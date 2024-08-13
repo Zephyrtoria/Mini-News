@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MiniNews.iml" filepath="$PROJECT_DIR$/MiniNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro-client/pro-client.iml" filepath="$PROJECT_DIR$/pro-client/pro-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro_service/pro_service.iml" filepath="$PROJECT_DIR$/pro_service/pro_service.iml" />
+    </modules>
+  </component>
+</project>
