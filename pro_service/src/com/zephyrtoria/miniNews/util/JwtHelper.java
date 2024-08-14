@@ -9,7 +9,7 @@ public class JwtHelper {
     private static long tokenExpiration = 24 * 60 * 60 * 1000;
     private static String tokenSignKey = "123456";
 
-    //生成token字符串
+    // 生成token字符串
     public static String createToken(Long userId) {
         String token = Jwts.builder()
 
@@ -22,7 +22,7 @@ public class JwtHelper {
         return token;
     }
 
-    //从token字符串获取userid
+    // 从token字符串获取userid
     public static Long getUserId(String token) {
         if (StringUtils.isEmpty(token)) return null;
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(tokenSignKey).parseClaimsJws(token);
@@ -32,7 +32,7 @@ public class JwtHelper {
     }
 
 
-    //判断token是否有效
+    // 判断token是否有效
     public static boolean isExpiration(String token) {
         try {
             boolean isExpire = Jwts.parser()
